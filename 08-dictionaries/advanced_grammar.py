@@ -1,4 +1,6 @@
 import random
+import re
+
 
 grammar = {
     "_S"  : ["_NP _VP"],
@@ -9,7 +11,6 @@ grammar = {
     "_P"  : ["about", "near"],
     "_V"  : ["learns", "trains", "tests", "is", "studies", "asks"]
 }
-
 
 def make_sentence(g, sentence=''):
     if sentence == '':
@@ -24,7 +25,7 @@ def make_sentence(g, sentence=''):
     low = sentence.find('_')
     print('low: '.format(str(low))
     #from_low = sentence[low:]
-    if ' ' not in sentence:
+    if len(re.find(" ", sentence)) < 1:
         print('no spaces were found - DONE')
         print('whole sentence:{0}'.format(sentence))
         print('substring:{0}'.format(sentence[:low]))
