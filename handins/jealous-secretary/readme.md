@@ -1,6 +1,6 @@
-#Homicide Report
+# Homicide Report
 
-##Instructions:
+## Instructions:
 
 Copy the database.csv file to the folder containing the unruly-knife-solution.py file
 
