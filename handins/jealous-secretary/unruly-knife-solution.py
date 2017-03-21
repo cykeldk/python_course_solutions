@@ -6,7 +6,7 @@ global DATA
 
 
 
-def get_data(url=None, file_path='C:/datamatiker/python/exercises/handins/jealous-secretary/database.csv'):
+def get_data(url=None, file_path='C:/datamatiker/python/exercises/handins/jealous-secretary/dataset/database.csv'):
     if url:
         webget.download(url, file_path)
     global DATA
